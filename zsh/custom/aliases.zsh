@@ -1,0 +1,6 @@
+alias lol="fortune -s computers | cowsay | lolcat"
+alias ci="composer install"
+alias sound="pavucontrol"
+alias display="arandr"
+alias files="nautilus --no-desktop"
+alias phpstorm="~/PhpStorm-173.4127.29/bin/phpstorm.sh"
