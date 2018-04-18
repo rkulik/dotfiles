@@ -157,9 +157,9 @@ bar {
 }
 
 # Custom bindings
-bindsym $mod+shift+x exec i3lock --color "#000000"
+bindsym $mod+shift+x exec i3lock -i $HOME/Pictures/Wallpapers/wallpaper.png -t
 bindsym $mod+g exec setxkbmap de
 bindsym $mod+u exec setxkbmap us
 
 # Execs
-exec_always feh --bg-fill /home/rkulik/Pictures/Wallpapers/wallpaper.jpg
+exec_always feh --bg-fill $HOME/Pictures/Wallpapers/wallpaper.png
