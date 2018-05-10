@@ -178,17 +178,26 @@ bar {
 bindsym $mod+$alt+x exec i3lock -i $HOME/Pictures/Wallpapers/wallpaper.png -t
 bindsym $mod+$alt+F1 exec setxkbmap us
 bindsym $mod+$alt+F2 exec setxkbmap de
+
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
+
 bindsym $mod+$alt+f exec $term -e ranger
 bindsym $mod+$alt+s exec --no-startup-id pavucontrol
 bindsym $mod+$alt+d exec --no-startup-id arandr
-bindsym $mod+$alt+y resize shrink width 10 px or 10 ppt
-bindsym $mod+$alt+u resize grow height 10 px or 10 ppt
-bindsym $mod+$alt+i resize shrink height 10 px or 10 ppt
-bindsym $mod+$alt+o resize grow width 10 px or 10 ppt
+
+bindsym $mod+$alt+h resize shrink width 10 px or 10 ppt
+bindsym $mod+$alt+j resize grow height 10 px or 10 ppt
+bindsym $mod+$alt+k resize shrink height 10 px or 10 ppt
+bindsym $mod+$alt+l resize grow width 10 px or 10 ppt
+
+bindsym $mod+$alt+y focus left
+bindsym $mod+$alt+u focus down
+bindsym $mod+$alt+i focus up
+bindsym $mod+$alt+o focus right
+
 bindsym Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/Screenshots/'
 bindsym $mod+Print exec --no-startup-id scrot -u -e 'mv $f ~/Pictures/Screenshots/'
-bindsym $mod+Tab workspace next
-bindsym $mod+Shift+Tab workspace prev
 
 # EXECS
 exec_always feh --bg-fill $HOME/Pictures/Wallpapers/wallpaper.png
