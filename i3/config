@@ -187,6 +187,8 @@ bindsym $mod+$alt+i resize shrink height 10 px or 10 ppt
 bindsym $mod+$alt+o resize grow width 10 px or 10 ppt
 bindsym Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/Screenshots/'
 bindsym $mod+Print exec --no-startup-id scrot -u -e 'mv $f ~/Pictures/Screenshots/'
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
 
 # EXECS
 exec_always feh --bg-fill $HOME/Pictures/Wallpapers/wallpaper.png
