@@ -191,6 +191,11 @@ bindsym $mod+$alt+j resize grow height 10 px or 10 ppt
 bindsym $mod+$alt+k resize shrink height 10 px or 10 ppt
 bindsym $mod+$alt+l resize grow width 10 px or 10 ppt
 
+bindsym $mod+$alt+Left resize shrink width 10 px or 10 ppt
+bindsym $mod+$alt+Up resize grow height 10 px or 10 ppt
+bindsym $mod+$alt+Down resize shrink height 10 px or 10 ppt
+bindsym $mod+$alt+Right resize grow width 10 px or 10 ppt
+
 bindsym $mod+$alt+y focus left
 bindsym $mod+$alt+u focus down
 bindsym $mod+$alt+i focus up
