@@ -1,4 +1,4 @@
-install: install-zsh install-git install-i3
+install: install-zsh install-git install-i3 install-i3blocks
 
 install-zsh:
 	rm -f ~/.zshrc
@@ -17,3 +17,7 @@ install-i3:
 	rm -f ~/.config/i3status/config
 	mkdir -p ~/.config/i3status
 	ln -s `pwd`/i3/i3status/config ~/.config/i3status/config
+
+install-i3blocks:
+	rm -f ~/.i3blocks.conf
+	ln -s `pwd`/i3/i3blocks/config ~/.i3blocks.conf
