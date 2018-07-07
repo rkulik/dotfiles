@@ -177,8 +177,8 @@ bar {
 
 # CUSTOM BINDINGS
 bindsym $mod+$alt+x exec i3lock -i $HOME/Pictures/Wallpapers/wallpaper.png -t
-bindsym $mod+$alt+F1 exec setxkbmap us
-bindsym $mod+$alt+F2 exec setxkbmap de
+bindsym $mod+$alt+F1 exec setxkbmap us; exec --no-startup-id pkill -RTMIN+10 i3blocks
+bindsym $mod+$alt+F2 exec setxkbmap de; exec --no-startup-id pkill -RTMIN+10 i3blocks
 
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
