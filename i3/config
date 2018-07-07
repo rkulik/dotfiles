@@ -207,6 +207,7 @@ bindsym $mod+Print exec --no-startup-id scrot -u -e 'mv $f ~/Pictures/Screenshot
 
 # EXECS
 exec_always feh --bg-fill $HOME/Pictures/Wallpapers/wallpaper.png
+exec_always numlockx on
 
 # DEFAULT COLORS
 # class                   border  backgr. text    indicator child_border
