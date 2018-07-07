@@ -28,6 +28,13 @@ command=/usr/share/i3blocks/$BLOCK_NAME
 separator_block_width=15
 markup=none
 
+[keyboard_layout]
+label=🖮
+color=#FF00FF
+command=$HOME/.scripts/i3blocks/keyboard_layout
+interval=once
+signal=10
+
 # Volume indicator
 #
 # The first parameter sets the step (and units to display)
