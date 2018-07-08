@@ -205,6 +205,10 @@ bindsym $mod+$alt+o focus right
 bindsym Print exec --no-startup-id scrot -e 'mv $f ~/Pictures/Screenshots/'
 bindsym $mod+Print exec --no-startup-id scrot -u -e 'mv $f ~/Pictures/Screenshots/'
 
+bindsym $mod+$alt+plus exec --no-startup-id amixer -q -D pulse sset Master "5%"+ unmute; exec --no-startup-id pkill -RTMIN+10 i3blocks
+bindsym $mod+$alt+minus exec --no-startup-id amixer -q -D pulse sset Master "5%"- unmute; exec --no-startup-id pkill -RTMIN+10 i3blocks
+bindsym $mod+$alt+0 exec --no-startup-id amixer -q -D pulse sset Master toggle; exec --no-startup-id pkill -RTMIN+10 i3blocks
+
 # EXECS
 exec_always feh --bg-fill ~/Pictures/Wallpapers/sky-2048x1536.png
 exec_always numlockx on
