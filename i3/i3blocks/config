@@ -31,7 +31,7 @@ markup=none
 [keyboard_layout]
 label=🖮
 color=#FF00FF
-command=$HOME/.scripts/i3blocks/keyboard_layout
+command=~/.scripts/i3blocks/keyboard_layout
 interval=once
 signal=10
 
