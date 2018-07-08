@@ -11,6 +11,7 @@ install-git:
 	ln -s `pwd`/git/gitconfig ~/.gitconfig
 
 install-i3:
+	mkdir -p ~/Pictures/Screenshots
 	rm -f ~/.config/i3/config
 	mkdir -p ~/.config/i3
 	ln -s `pwd`/i3/config ~/.config/i3/config
