@@ -12,6 +12,9 @@ install-git:
 
 install-i3:
 	mkdir -p ~/Pictures/Screenshots
+	rm -f ~/Pictures/Wallpapers/wallpaper.png
+	mkdir -p ~/Pictures/Wallpapers
+	ln -s `pwd`/wallpaper.png ~/Pictures/Wallpapers/wallpaper.png
 	rm -f ~/.config/i3/config
 	mkdir -p ~/.config/i3
 	ln -s `pwd`/i3/config ~/.config/i3/config
