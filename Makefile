@@ -27,4 +27,3 @@ install-i3blocks:
 	ln -s `pwd`/i3/i3blocks/config ~/.i3blocks.conf
 	rm -f ~/.scripts/i3blocks/keyboard_layout
 	mkdir -p ~/.scripts/i3blocks
-	ln -s `pwd`/i3/i3blocks/scripts/keyboard_layout ~/.scripts/i3blocks/keyboard_layout

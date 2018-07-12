@@ -176,9 +176,7 @@ bar {
 }
 
 # CUSTOM BINDINGS
-bindsym $mod+$alt+x exec i3lock -i ~/Pictures/Wallpapers/wallpaper.png -t
-bindsym $mod+$alt+F1 exec setxkbmap us; exec --no-startup-id pkill -RTMIN+10 i3blocks
-bindsym $mod+$alt+F2 exec setxkbmap de; exec --no-startup-id pkill -RTMIN+10 i3blocks
+bindsym $mod+Shift+x exec i3lock -i ~/Pictures/Wallpapers/wallpaper.png -t
 
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
@@ -212,6 +210,7 @@ bindsym $mod+$alt+0 exec --no-startup-id amixer -q -D pulse sset Master toggle; 
 # EXECS
 exec_always feh --bg-fill ~/Pictures/Wallpapers/wallpaper.png
 exec_always numlockx on
+exec_always setxkbmap -option grp:caps_toggle,grp_led:caps us,de
 
 # DEFAULT COLORS
 # class                   border  backgr. text    indicator child_border
