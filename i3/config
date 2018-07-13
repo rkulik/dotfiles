@@ -211,6 +211,9 @@ bindsym $mod+$alt+0 exec --no-startup-id amixer -q -D pulse sset Master toggle; 
 exec_always feh --bg-fill ~/Pictures/Wallpapers/wallpaper.png
 exec_always numlockx on
 
+# APPLICATION CONFIGURATIONS 
+for_window [instance="guake"] floating enable
+
 # DEFAULT COLORS
 # class                   border  backgr. text    indicator child_border
 # client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
