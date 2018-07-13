@@ -1,4 +1,4 @@
-install: install-zsh install-git install-i3 install-i3blocks
+install: install-zsh install-git install-x install-i3 install-i3blocks
 
 install-zsh:
 	rm -f ~/.zshrc
@@ -9,6 +9,10 @@ install-zsh:
 install-git:
 	rm -f ~/.gitconfig
 	ln -s `pwd`/git/gitconfig ~/.gitconfig
+
+install-x:
+	rm -f ~/.xsessionrc
+	ln -s `pwd`/x/xsessionrc ~/.xsessionrc
 
 install-i3:
 	mkdir -p ~/Pictures/Screenshots
