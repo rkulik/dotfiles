@@ -176,7 +176,7 @@ bar {
 }
 
 # CUSTOM BINDINGS
-bindsym $mod+Shift+x exec --no-startup-id i3lock -i ~/Pictures/Wallpapers/wallpaper.png -t
+bindsym $mod+Shift+x exec --no-startup-id i3lock -c 1E3A48 -n
 
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
