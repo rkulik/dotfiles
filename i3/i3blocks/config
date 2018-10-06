@@ -61,10 +61,16 @@ signal=10
 # The directory defaults to $HOME if the instance is not specified.
 # The script may be called with a optional argument to set the alert
 # (defaults to 10 for 10%).
-#[disk]
-#label=HOME
-#instance=/mnt/data
-#interval=30
+[disk]
+label=boot
+instance=/boot
+interval=30
+color=#F19950
+
+[disk]
+label=home
+interval=30
+color=#D9534F
 
 # Network interface monitoring
 #
