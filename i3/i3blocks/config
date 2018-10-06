@@ -77,11 +77,11 @@ color=#00FF00
 interval=10
 separator=false
 
-[wifi]
-label=📶
+#[wifi]
+#label=📶
 #instance=wlp3s0
-interval=10
-separator=false
+#interval=10
+#separator=false
 
 [bandwidth]
 #instance=eth0
