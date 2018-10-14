@@ -1,4 +1,4 @@
-install: install-zsh install-git install-x install-i3 install-i3blocks
+install: install-zsh install-git install-screenlayouts install-x install-i3 install-i3blocks
 
 install-zsh:
 	rm -f ~/.zshrc
@@ -9,6 +9,15 @@ install-zsh:
 install-git:
 	rm -f ~/.gitconfig
 	ln -s `pwd`/git/gitconfig ~/.gitconfig
+
+install-screenlayouts:
+	rm -f ~/.screenlayout/work.sh
+	rm -f ~/.screenlayout/laptop.sh
+	rm -f ~/.screenlayout/home.sh
+	mkdir -p ~/.screenlayout
+	ln -s `pwd`/scripts/screenlayouts/work.sh ~/.screenlayout/work.sh
+	ln -s `pwd`/scripts/screenlayouts/laptop.sh ~/.screenlayout/laptop.sh
+	ln -s `pwd`/scripts/screenlayouts/home.sh ~/.screenlayout/home.sh
 
 install-x:
 	rm -f ~/.xsessionrc

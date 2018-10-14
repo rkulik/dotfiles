@@ -207,6 +207,18 @@ bindsym $mod+$alt+plus exec --no-startup-id amixer -q -D pulse sset Master "5%"+
 bindsym $mod+$alt+minus exec --no-startup-id amixer -q -D pulse sset Master "5%"- unmute; exec --no-startup-id pkill -RTMIN+10 i3blocks
 bindsym $mod+$alt+0 exec --no-startup-id amixer -q -D pulse sset Master toggle; exec --no-startup-id pkill -RTMIN+10 i3blocks
 
+# SCREENLAYOUTS
+set $displayMode "Set display mode [w]ork [l]aptop [h]ome"
+bindsym $mod+$alt+x mode $displayMode
+mode $displayMode {
+        bindsym w exec --no-startup-id ~/.screenlayout/work.sh; mode "default"
+        bindsym l exec --no-startup-id ~/.screenlayout/laptop.sh; mode "default"
+        bindsym h exec --no-startup-id ~/.screenlayout/home.sh; mode "default"
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
 # EXECS
 exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/wallpaper.png
 exec_always --no-startup-id numlockx on
