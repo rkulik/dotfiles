@@ -1,11 +1,5 @@
 weather() {
-    if [ -n "$*" ]; then
-        location=$(php -r "echo urlencode(\"$*\");");
-    else
-        location="hamburg";
-    fi
-
-    curl "http://wttr.in/$location";
+    curl http://wttr.in/$1
 }
 
 upgrade() {
