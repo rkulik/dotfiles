@@ -171,12 +171,12 @@ bar {
                 # binding_mode       #2f343a #900000 #ffffff
 
                 # CUSTOM COLORS
-                focused_workspace    #ff9387 #e74c3c #ffffff
+                focused_workspace    #818a9b #504857 #ffffff
         }
 }
 
 # CUSTOM BINDINGS
-bindsym $mod+Shift+x exec --no-startup-id i3lock -c 1E3A48 -n
+bindsym $mod+Shift+x exec --no-startup-id i3lock -c 211f2a -n
 
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
@@ -237,5 +237,5 @@ for_window [instance="guake"] floating enable
 # client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 # CUSTOM COLORS
-client.focused            #ff9387 #e74c3c #ffffff #2e9ef4   #285577
+client.focused            #818a9b #504857 #ffffff #2e9ef4   #285577
 client.background         #ffffff

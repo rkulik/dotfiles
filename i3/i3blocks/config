@@ -65,12 +65,12 @@ signal=10
 label=boot
 instance=/boot
 interval=30
-color=#F19950
+color=#818a9b
 
 [disk]
 label=home
 interval=30
-color=#D9534F
+color=#818a9b
 
 # Network interface monitoring
 #
@@ -79,7 +79,7 @@ color=#D9534F
 [iface]
 label=🌐
 #instance=wlan0
-color=#00FF00
+color=#00ff00
 interval=10
 separator=false
 
@@ -92,6 +92,7 @@ separator=false
 [bandwidth]
 #instance=eth0
 interval=5
+color=#818a9b
 
 # CPU usage
 #
@@ -118,7 +119,7 @@ interval=30
 # Date Time
 #
 [time]
-color=#00FFFF
+color=#00ffff
 command=echo 📅 $(date '+%d.%m.%Y') 🕓 $(date '+%H:%M:%S')
 interval=5
 
