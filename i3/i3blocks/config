@@ -65,12 +65,12 @@ signal=10
 label=boot
 instance=/boot
 interval=30
-color=#818a9b
+color=#888888
 
 [disk]
 label=home
 interval=30
-color=#818a9b
+color=#888888
 
 # Network interface monitoring
 #
@@ -92,7 +92,7 @@ separator=false
 [bandwidth]
 #instance=eth0
 interval=5
-color=#818a9b
+color=#888888
 
 # CPU usage
 #
