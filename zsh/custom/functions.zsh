@@ -18,3 +18,7 @@ upgrade() {
     sudo apt-get autoremove
     echo 'APT auto remove finished...'
 }
+
+port() {
+    lsof -i :$1
+}
