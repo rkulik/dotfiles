@@ -201,7 +201,7 @@ bindsym $mod+$alt+i focus up
 bindsym $mod+$alt+o focus right
 
 bindsym Print exec --no-startup-id xfce4-screenshooter
-bindsym $mod+$alt+v exec --no-startup-id xfce4-popup-clipman
+bindsym $mod+Control+v exec --no-startup-id xfce4-popup-clipman
 
 bindsym $mod+$alt+plus exec --no-startup-id amixer -q -D pulse sset Master "5%"+ unmute; exec --no-startup-id pkill -RTMIN+10 i3blocks
 bindsym $mod+$alt+minus exec --no-startup-id amixer -q -D pulse sset Master "5%"- unmute; exec --no-startup-id pkill -RTMIN+10 i3blocks
