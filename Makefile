@@ -1,4 +1,4 @@
-install: install-zsh install-git install-screenlayouts install-x install-i3 install-i3blocks
+install: install-zsh install-git install-scripts install-screenlayouts install-x install-i3 install-i3blocks
 
 install-zsh:
 	rm -f ~/.zshrc
@@ -9,6 +9,11 @@ install-zsh:
 install-git:
 	rm -f ~/.gitconfig
 	ln -s `pwd`/git/gitconfig ~/.gitconfig
+
+install-scripts:
+	rm -f ~/.scripts/brightness.sh
+	mkdir -p ~/.scripts
+	ln -s `pwd`/scripts/brightness.sh ~/.scripts/brightness.sh
 
 install-screenlayouts:
 	rm -f ~/.screenlayout/work.sh
