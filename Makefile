@@ -16,13 +16,13 @@ install-scripts:
 	ln -s `pwd`/scripts/brightness.sh ~/.scripts/brightness.sh
 
 install-screenlayouts:
-	rm -f ~/.screenlayout/work.sh
-	rm -f ~/.screenlayout/laptop.sh
-	rm -f ~/.screenlayout/home.sh
-	mkdir -p ~/.screenlayout
-	ln -s `pwd`/scripts/screenlayouts/work.sh ~/.screenlayout/work.sh
-	ln -s `pwd`/scripts/screenlayouts/laptop.sh ~/.screenlayout/laptop.sh
-	ln -s `pwd`/scripts/screenlayouts/home.sh ~/.screenlayout/home.sh
+	rm -f ~/.scripts/screenlayouts/work.sh
+	rm -f ~/.scripts/screenlayouts/laptop.sh
+	rm -f ~/.scripts/screenlayouts/home.sh
+	mkdir -p ~/.scripts/screenlayouts
+	ln -s `pwd`/scripts/screenlayouts/work.sh ~/.scripts/screenlayouts/work.sh
+	ln -s `pwd`/scripts/screenlayouts/laptop.sh ~/.scripts/screenlayouts/laptop.sh
+	ln -s `pwd`/scripts/screenlayouts/home.sh ~/.scripts/screenlayouts/home.sh
 
 install-x:
 	rm -f ~/.xsessionrc
