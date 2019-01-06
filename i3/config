@@ -181,7 +181,7 @@ bindsym $mod+Shift+x exec --no-startup-id i3lock -c 260d0a -n
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
-bindsym $mod+$alt+f exec $term -e ranger
+bindsym $mod+$alt+f exec --no-startup-id nautilus
 bindsym $mod+$alt+s exec --no-startup-id pavucontrol
 bindsym $mod+$alt+d exec --no-startup-id arandr
 
