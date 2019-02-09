@@ -20,5 +20,5 @@ upgrade() {
 }
 
 port() {
-    lsof -i :$1
+    lsof -i $1
 }
