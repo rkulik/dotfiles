@@ -228,6 +228,7 @@ exec_always --no-startup-id numlockx on
 exec --no-startup-id nm-applet
 exec --no-startup-id guake
 exec --no-startup-id xfce4-clipman
+exec --no-startup-id blueman-applet
 
 # APPLICATION CONFIGURATIONS 
 for_window [instance="guake"] floating enable
