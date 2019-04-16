@@ -12,9 +12,9 @@ adjustBrightness() {
 
 case "$1" in
     +)
-        adjustBrightness 500
+        adjustBrightness 10000
         ;;
     -)
-        adjustBrightness -500
+        adjustBrightness -10000
         ;;
 esac
