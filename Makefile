@@ -17,10 +17,12 @@ install-scripts:
 
 install-screenlayouts:
 	rm -f ~/.scripts/screenlayouts/laptop.sh
-	rm -f ~/.scripts/screenlayouts/k.sh
+	rm -f ~/.scripts/screenlayouts/home.sh
+	rm -f ~/.scripts/screenlayouts/s.sh
 	mkdir -p ~/.scripts/screenlayouts
 	ln -s `pwd`/scripts/screenlayouts/laptop.sh ~/.scripts/screenlayouts/laptop.sh
-	ln -s `pwd`/scripts/screenlayouts/k.sh ~/.scripts/screenlayouts/k.sh
+	ln -s `pwd`/scripts/screenlayouts/home.sh ~/.scripts/screenlayouts/home.sh
+	ln -s `pwd`/scripts/screenlayouts/s.sh ~/.scripts/screenlayouts/s.sh
 
 install-x:
 	rm -f ~/.xsessionrc
