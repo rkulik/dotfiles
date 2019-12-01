@@ -26,7 +26,9 @@ install-screenlayouts:
 
 install-x:
 	rm -f ~/.xsessionrc
+	rm -f ~/.Xresources
 	ln -s `pwd`/x/xsessionrc ~/.xsessionrc
+	ln -s `pwd`/x/Xresources ~/.Xresources
 
 install-i3:
 	mkdir -p ~/Pictures/Screenshots
