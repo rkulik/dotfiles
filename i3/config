@@ -202,7 +202,7 @@ bindsym $mod+$alt+u focus down
 bindsym $mod+$alt+i focus up
 bindsym $mod+$alt+o focus right
 
-bindsym Print exec --no-startup-id xfce4-screenshooter
+bindsym Print exec --no-startup-id flameshot gui
 bindsym $mod+Control+v exec --no-startup-id xfce4-popup-clipman
 
 bindsym $mod+$alt+plus exec --no-startup-id amixer -q -D pulse sset Master "5%"+ unmute; exec --no-startup-id pkill -RTMIN+10 i3blocks
@@ -232,6 +232,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id guake
 exec --no-startup-id xfce4-clipman
 exec --no-startup-id blueman-applet
+exec --no-startup-id flameshot config -f "Screenshot_%Y-%m-%d_%H-%M-%S" -m "#e74c3c" -k "#00ffff" -t false
 
 # APPLICATION CONFIGURATIONS 
 for_window [instance="guake"] floating enable
