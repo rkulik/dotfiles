@@ -1,4 +1,8 @@
-install: install-zsh install-git install-scripts install-screenlayouts install-x install-i3 install-i3blocks
+install: install-sh install-zsh install-git install-scripts install-screenlayouts install-x install-i3 install-i3blocks
+
+install-sh:
+	rm -f ~/.myprofile
+	ln -s `pwd`/sh/myprofile ~/.myprofile
 
 install-zsh:
 	rm -f ~/.zshrc
