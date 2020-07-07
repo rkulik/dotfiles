@@ -114,7 +114,7 @@ color=#888888
 # see the script for details.
 [temperature]
 command=/usr/share/i3blocks/temperature --chip coretemp-isa-0000
-label=TEMP
+label=🌡️
 interval=10
 
 # Battery indicator
