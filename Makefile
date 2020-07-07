@@ -16,8 +16,10 @@ install-git:
 
 install-scripts:
 	rm -f ~/.scripts/brightness.sh
+	rm -f ~/.scripts/cpu-temperature.sh
 	mkdir -p ~/.scripts
 	ln -s `pwd`/scripts/brightness.sh ~/.scripts/brightness.sh
+	ln -s `pwd`/scripts/cpu-temperature.sh ~/.scripts/cpu-temperature.sh
 
 install-screenlayouts:
 	rm -f ~/.screenlayouts/laptop.sh
