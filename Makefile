@@ -22,13 +22,13 @@ install-scripts:
 	ln -s `pwd`/scripts/cpu-temperature.sh ~/.scripts/cpu-temperature.sh
 
 install-screenlayouts:
-	rm -f ~/.screenlayouts/laptop.sh
-	rm -f ~/.screenlayouts/home.sh
-	rm -f ~/.screenlayouts/s.sh
-	mkdir -p ~/.screenlayouts
-	ln -s `pwd`/screenlayouts/laptop.sh ~/.screenlayouts/laptop.sh
-	ln -s `pwd`/screenlayouts/home.sh ~/.screenlayouts/home.sh
-	ln -s `pwd`/screenlayouts/s.sh ~/.screenlayouts/s.sh
+	rm -f ~/.screenlayout/laptop.sh
+	rm -f ~/.screenlayout/home.sh
+	rm -f ~/.screenlayout/s.sh
+	mkdir -p ~/.screenlayout
+	ln -s `pwd`/screenlayout/laptop.sh ~/.screenlayout/laptop.sh
+	ln -s `pwd`/screenlayout/home.sh ~/.screenlayout/home.sh
+	ln -s `pwd`/screenlayout/s.sh ~/.screenlayout/s.sh
 
 install-x:
 	rm -f ~/.xsessionrc
