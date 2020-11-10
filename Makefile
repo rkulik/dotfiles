@@ -23,12 +23,12 @@ install-scripts:
 
 install-screenlayouts:
 	rm -f ~/.screenlayout/laptop.sh
-	rm -f ~/.screenlayout/home.sh
-	rm -f ~/.screenlayout/s.sh
+	rm -f ~/.screenlayout/monitor.sh
+	rm -f ~/.screenlayout/laptop-and-monitor.sh
 	mkdir -p ~/.screenlayout
 	ln -s `pwd`/screenlayout/laptop.sh ~/.screenlayout/laptop.sh
-	ln -s `pwd`/screenlayout/home.sh ~/.screenlayout/home.sh
-	ln -s `pwd`/screenlayout/s.sh ~/.screenlayout/s.sh
+	ln -s `pwd`/screenlayout/monitor.sh ~/.screenlayout/monitor.sh
+	ln -s `pwd`/screenlayout/laptop-and-monitor.sh ~/.screenlayout/laptop-and-monitor.sh
 
 install-x:
 	rm -f ~/.xsessionrc

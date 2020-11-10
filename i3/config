@@ -213,12 +213,12 @@ bindsym XF86MonBrightnessUp exec --no-startup-id ~/.scripts/brightness.sh +
 bindsym XF86MonBrightnessDown exec --no-startup-id ~/.scripts/brightness.sh -
 
 # SCREENLAYOUTS
-set $displayMode "Set display mode [l]aptop [h]ome [s]"
+set $displayMode "Set display mode [l]aptop [m]onitor [b]oth"
 bindsym $mod+$alt+x mode $displayMode
 mode $displayMode {
         bindsym l exec --no-startup-id ~/.screenlayout/laptop.sh; mode "default"
-        bindsym h exec --no-startup-id ~/.screenlayout/home.sh; mode "default"
-        bindsym s exec --no-startup-id ~/.screenlayout/s.sh; mode "default"
+        bindsym m exec --no-startup-id ~/.screenlayout/monitor.sh; mode "default"
+        bindsym b exec --no-startup-id ~/.screenlayout/laptop-and-monitor.sh; mode "default"
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
