@@ -130,7 +130,7 @@ interval=30
 #
 [time]
 color=#00ffff
-command=echo 📅 $(date '+%d.%m.%Y') 🕓 $(date '+%H:%M:%S')
+command=echo 📅 $(date '+%a. %d.%m.%Y') 🕓 $(date '+%H:%M:%S')
 interval=5
 
 # Generic media player support
