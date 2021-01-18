@@ -3,10 +3,13 @@ alias hg="history | grep"
 
 alias gst="git status"
 alias gaa="git add --all"
+alias gapa="git add --patch"
 alias gc="git commit -v"
 alias gf="git fetch"
 alias gl="git pull"
+alias gup="git pull --rebase"
 alias gpoh="git push origin HEAD"
+alias gpfoh="git push --force-with-lease origin HEAD"
 alias gco="git checkout"
 alias nah="git reset --hard && git clean -df"
 
