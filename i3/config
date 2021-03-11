@@ -233,6 +233,7 @@ exec --no-startup-id guake
 exec --no-startup-id xfce4-clipman
 exec --no-startup-id blueman-applet
 exec --no-startup-id flameshot config -f "Screenshot_%Y-%m-%d_%H-%M-%S" -m "#e74c3c" -k "#00ffff" -t false
+exec --no-startup-id gxkb
 
 # APPLICATION CONFIGURATIONS 
 for_window [instance="guake"] floating enable
