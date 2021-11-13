@@ -1,4 +1,4 @@
-install: install-sh install-zsh install-git install-scripts install-screenlayouts install-x install-i3 install-i3blocks
+install: install-sh install-zsh install-git install-helpers install-screenlayouts install-x install-i3 install-i3blocks
 
 install-sh:
 	rm -f ~/.myprofile
@@ -14,12 +14,12 @@ install-git:
 	rm -f ~/.gitconfig
 	ln -s `pwd`/git/gitconfig ~/.gitconfig
 
-install-scripts:
-	rm -f ~/.scripts/brightness.sh
-	rm -f ~/.scripts/cpu-temperature.sh
-	mkdir -p ~/.scripts
-	ln -s `pwd`/scripts/brightness.sh ~/.scripts/brightness.sh
-	ln -s `pwd`/scripts/cpu-temperature.sh ~/.scripts/cpu-temperature.sh
+install-helpers:
+	rm -f ~/.helpers/brightness
+	rm -f ~/.helpers/cpu-temperature
+	mkdir -p ~/.helpers
+	ln -s `pwd`/helpers/brightness ~/.helpers/brightness
+	ln -s `pwd`/helpers/cpu-temperature ~/.helpers/cpu-temperature
 
 install-screenlayouts:
 	rm -f ~/.screenlayout/laptop.sh

@@ -113,7 +113,7 @@ color=#888888
 # The script may be called with -w and -c switches to specify thresholds,
 # see the script for details.
 [temperature]
-command=~/.scripts/cpu-temperature.sh
+command=~/.helpers/cpu-temperature
 label=🌡️
 interval=10
 

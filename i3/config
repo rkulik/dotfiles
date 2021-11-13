@@ -209,8 +209,8 @@ bindsym $mod+$alt+plus exec --no-startup-id amixer -q -D pulse sset Master "5%"+
 bindsym $mod+$alt+minus exec --no-startup-id amixer -q -D pulse sset Master "5%"- unmute; exec --no-startup-id pkill -RTMIN+10 i3blocks
 bindsym $mod+$alt+0 exec --no-startup-id amixer -q -D pulse sset Master toggle; exec --no-startup-id pkill -RTMIN+10 i3blocks
 
-bindsym XF86MonBrightnessUp exec --no-startup-id ~/.scripts/brightness.sh +
-bindsym XF86MonBrightnessDown exec --no-startup-id ~/.scripts/brightness.sh -
+bindsym XF86MonBrightnessUp exec --no-startup-id ~/.helpers/brightness +
+bindsym XF86MonBrightnessDown exec --no-startup-id ~/.helpers/brightness -
 
 # SCREENLAYOUTS
 set $displayMode "Set display mode [l]aptop [m]onitor [b]oth"
