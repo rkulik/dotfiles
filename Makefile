@@ -1,4 +1,4 @@
-install: install-sh install-zsh install-git install-helpers install-screenlayouts install-x install-i3 install-i3blocks
+install: install-sh install-zsh install-git
 
 install-sh:
 	rm -f ~/.myprofile
