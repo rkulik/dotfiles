@@ -1,6 +1,5 @@
 alias ci="composer install"
 alias hg="history | grep"
-
 alias gst="git status"
 alias gaa="git add --all"
 alias gapa="git add --patch"
@@ -12,6 +11,11 @@ alias gpoh="git push origin HEAD"
 alias gpfoh="git push --force-with-lease origin HEAD"
 alias gco="git checkout"
 alias nah="git reset --hard && git clean -df"
+
+# Set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
 
 createTag() {
     if [ ! $(git rev-parse --is-inside-work-tree 2>/dev/null) ]; then
