@@ -1,4 +1,4 @@
-install: install-sh install-zsh install-git
+install: install-sh install-zsh install-git configure-gnome
 
 install-sh:
 	rm -f ~/.myprofile
@@ -13,3 +13,8 @@ install-zsh:
 install-git:
 	rm -f ~/.gitconfig
 	ln -s `pwd`/git/gitconfig ~/.gitconfig
+
+configure-gnome:
+	gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>Return']"
+	gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
+	gnome-extensions disable ubuntu-dock@ubuntu.com
