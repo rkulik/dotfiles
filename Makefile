@@ -1,4 +1,4 @@
-install: install-sh install-zsh install-git configure-gnome
+install: install-sh install-zsh install-git
 
 install-sh:
 	rm -f ~/.myprofile
