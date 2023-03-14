@@ -17,4 +17,5 @@ install-git:
 configure-gnome:
 	gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>Return']"
 	gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
+	gsettings set org.gnome.mutter center-new-windows true
 	gnome-extensions disable ubuntu-dock@ubuntu.com
