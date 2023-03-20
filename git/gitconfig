@@ -2,3 +2,5 @@
 	path = ~/.gitconfig.local
 [core]
 	autocrlf = input
+[init]
+	defaultBranch = main
