@@ -30,15 +30,29 @@ tag() {
         return
     fi
 
-    echo -n "Message: "
-    read message
-    if [[ (-z "${message}") ]]; then
-        echo "Message is required!"
-        return
-    fi
+    echo -n "Annotate the tag? (y/n): "
+    read answer
 
-    git tag -a ${tag} -m "${message}"
-    git push origin HEAD ${tag}
+    case ${answer} in
+    [Yy] | [Yy][Ee][Ss])
+        echo -n "Message: "
+        read message
+        if [[ (-z "${message}") ]]; then
+            echo "Message is required!"
+            return
+        fi
+
+        git tag -a ${tag} -m "${message}"
+        git push origin HEAD ${tag}
+        ;;
+    [Nn] | [Nn][Oo])
+        git tag ${tag}
+        git push origin HEAD ${tag}
+        ;;
+    *)
+        echo "Invalid input! Enter 'y' or 'n'."
+        ;;
+    esac
 }
 
 weather() {
