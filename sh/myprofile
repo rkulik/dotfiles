@@ -23,14 +23,14 @@ tag() {
         return
     fi
 
-    echo "Tag:"
+    echo -n "Tag: "
     read tag
     if [[ (-z "${tag}") ]]; then
         echo "Tag is required!"
         return
     fi
 
-    echo "Message:"
+    echo -n "Message: "
     read message
     if [[ (-z "${message}") ]]; then
         echo "Message is required!"
@@ -42,13 +42,13 @@ tag() {
 }
 
 weather() {
-    echo "City:"
+    echo -n "City: "
     read city
     curl http://wttr.in/${city// /+}
 }
 
 port() {
-    echo "Port:"
+    echo -n "Port: "
     read port
     if [[ (-z "${port}") ]]; then
         echo "Port is required!"
