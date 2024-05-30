@@ -11,6 +11,7 @@ alias gpfoh="git push --force-with-lease origin HEAD"
 alias gco="git checkout"
 alias nah="git reset --hard && git clean -df"
 alias gcc="conventional-commits"
+alias glgg="git log --graph"
 
 # Set PATH so it includes user's private bin if it exists
 if [ -d "${HOME}/bin" ]; then
