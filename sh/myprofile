@@ -12,6 +12,7 @@ alias gst="git status"
 alias gup="git pull --rebase"
 alias hg="history | grep"
 alias nah="git reset --hard && git clean -df"
+alias os="grep -E '(^NAME|VERSION)=' /etc/os-release"
 
 # Set PATH so it includes user's private bin if it exists
 if [ -d "${HOME}/bin" ]; then
