@@ -14,6 +14,10 @@ install-git:
 	rm -f ~/.gitconfig
 	ln -s `pwd`/git/gitconfig ~/.gitconfig
 
+install-ulauncher:
+	rm -rf ~/.config/ulauncher
+	ln -s `pwd`/ulauncher ~/.config/ulauncher
+
 configure-gnome:
 	gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>Return']"
 	gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
