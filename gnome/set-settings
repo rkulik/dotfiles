@@ -1,0 +1,4 @@
+#!/bin/bash
+set -e
+
+gsettings set org.gnome.mutter center-new-windows true

@@ -23,7 +23,6 @@ install-flameshot:
 	sudo ln -s `pwd`/flameshot/flameshot-gui-workaround /usr/local/bin/flameshot-gui-workaround
 
 configure-gnome:
-	gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>Return']"
-	gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
-	gsettings set org.gnome.mutter center-new-windows true
-	gnome-extensions disable ubuntu-dock@ubuntu.com
+	`pwd`/gnome/set-settings
+	`pwd`/gnome/set-extensions
+	`pwd`/gnome/set-keyboard-shortcuts
