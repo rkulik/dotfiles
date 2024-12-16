@@ -18,6 +18,10 @@ install-ulauncher:
 	rm -rf ~/.config/ulauncher
 	ln -s `pwd`/ulauncher ~/.config/ulauncher
 
+install-flameshot:
+	sudo rm -f /usr/local/bin/flameshot-gui-workaround
+	sudo ln -s `pwd`/flameshot/flameshot-gui-workaround /usr/local/bin/flameshot-gui-workaround
+
 configure-gnome:
 	gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>Return']"
 	gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
