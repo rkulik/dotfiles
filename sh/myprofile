@@ -45,11 +45,11 @@ tag() {
         fi
 
         git tag -a ${tag} -m "${message}"
-        git push origin HEAD ${tag}
+        git push origin ${tag}
         ;;
     [Nn] | [Nn][Oo])
         git tag ${tag}
-        git push origin HEAD ${tag}
+        git push origin ${tag}
         ;;
     *)
         echo "Invalid input! Enter 'y' or 'n'."
