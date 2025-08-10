@@ -1,3 +1,4 @@
+alias dmarc="dmarc-report-viewer"
 alias gaa="git add --all"
 alias gapa="git add --patch"
 alias gc="git commit -v"
