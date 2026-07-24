@@ -15,6 +15,7 @@ install-git:
 	ln -s `pwd`/git/gitconfig ~/.gitconfig
 
 install-ulauncher:
+	mkdir -p ~/.config
 	rm -rf ~/.config/ulauncher
 	ln -s `pwd`/ulauncher ~/.config/ulauncher
 
