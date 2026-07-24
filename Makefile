@@ -24,6 +24,16 @@ install-flameshot:
 	rm -f ~/.local/bin/flameshot-gui-workaround
 	ln -s `pwd`/flameshot/flameshot-gui-workaround ~/.local/bin/flameshot-gui-workaround
 
+install-alacritty:
+	mkdir -p ~/.config/alacritty/themes
+	rm -f ~/.config/alacritty/themes/monokai.yml
+	ln -s `pwd`/alacritty/themes/monokai.yml ~/.config/alacritty/themes/monokai.yml
+	rm -f ~/.config/alacritty/alacritty.yml
+	ln -s `pwd`/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+	mkdir -p ~/.local/bin
+	rm -f ~/.local/bin/alacritty
+	ln -s `pwd`/alacritty/alacritty ~/.local/bin/alacritty
+
 configure-gnome:
 	`pwd`/gnome/set-settings
 	`pwd`/gnome/set-extensions

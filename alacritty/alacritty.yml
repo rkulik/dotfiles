@@ -1,0 +1,6 @@
+import:
+  - ~/.config/alacritty/themes/monokai.yml
+window:
+  startup_mode: Maximized
+font:
+  size: 16.0
