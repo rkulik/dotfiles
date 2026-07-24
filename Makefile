@@ -19,8 +19,9 @@ install-ulauncher:
 	ln -s `pwd`/ulauncher ~/.config/ulauncher
 
 install-flameshot:
-	sudo rm -f /usr/local/bin/flameshot-gui-workaround
-	sudo ln -s `pwd`/flameshot/flameshot-gui-workaround /usr/local/bin/flameshot-gui-workaround
+	mkdir -p ~/.local/bin
+	rm -f ~/.local/bin/flameshot-gui-workaround
+	ln -s `pwd`/flameshot/flameshot-gui-workaround ~/.local/bin/flameshot-gui-workaround
 
 configure-gnome:
 	`pwd`/gnome/set-settings
