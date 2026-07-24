@@ -34,6 +34,10 @@ install-alacritty:
 	rm -f ~/.local/bin/alacritty
 	ln -s `pwd`/alacritty/alacritty ~/.local/bin/alacritty
 
+install-tmux:
+	rm -f ~/.tmux.conf
+	ln -s `pwd`/tmux/tmux.conf ~/.tmux.conf
+
 configure-gnome:
 	`pwd`/gnome/set-settings
 	`pwd`/gnome/set-extensions
