@@ -24,6 +24,11 @@ if [ -d "${HOME}/bin" ]; then
     PATH="${HOME}/bin:${PATH}"
 fi
 
+# Add ~/.local/bin to PATH if it exists
+if [ -d "${HOME}/.local/bin" ]; then
+    PATH="${HOME}/.local/bin:${PATH}"
+fi
+
 tag() {
     if [ ! $(git rev-parse --is-inside-work-tree 2>/dev/null) ]; then
         echo "You have to be inside a git repository!"
