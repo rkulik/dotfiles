@@ -18,6 +18,7 @@ alias gst="git status"
 alias hg="history | grep"
 alias nah="git reset --hard && git clean -df"
 alias os="grep -E '(^NAME|VERSION)=' /etc/os-release"
+alias t="tmux new-session -d \; split-window -h -l 70% \; split-window -v -l 50% -t 0 \; select-pane -R \; attach-session"
 
 # Set PATH so it includes user's private bin if it exists
 if [ -d "${HOME}/bin" ]; then
