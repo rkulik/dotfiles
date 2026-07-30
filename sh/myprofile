@@ -39,11 +39,46 @@ if [ -d "${PNPM_HOME}/bin" ]; then
 fi
 
 t() {
-    tmux new-session -d -x "$(tput cols)" -y "$(tput lines)" \
-        \; split-window -h -l 70% \
-        \; split-window -v -l 50% -t 0 \
-        \; select-pane -R \
-        \; attach-session
+    local name width height session
+    local -a nameArgument
+
+    name="$1"
+
+    if [ -n "${name}" ] && tmux has-session -t "=${name}" 2>/dev/null; then
+        if [ -n "${TMUX}" ]; then
+            tmux switch-client -t "=${name}"
+        else
+            tmux attach-session -t "=${name}"
+        fi
+
+        return
+    fi
+
+    if [ -n "${name}" ]; then
+        nameArgument=(-s "${name}")
+    fi
+
+    # Inside tmux tput reports the pane size, not the terminal size
+    if [ -n "${TMUX}" ]; then
+        width="$(tmux display-message -p '#{client_width}')"
+        height="$(tmux display-message -p '#{client_height}')"
+    else
+        width="$(tput cols)"
+        height="$(tput lines)"
+    fi
+
+    session="$(tmux new-session -dP -F '#{session_id}' \
+        -x "${width}" -y "${height}" "${nameArgument[@]}")"
+
+    tmux split-window -h -l 70% -t "${session}:" \
+        \; split-window -v -l 50% -t "${session}:.0" \
+        \; select-pane -R -t "${session}:"
+
+    if [ -n "${TMUX}" ]; then
+        tmux switch-client -t "${session}"
+    else
+        tmux attach-session -t "${session}"
+    fi
 }
 
 tag() {
